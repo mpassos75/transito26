@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+ <script  src="src/script.js"></script>
+  <link href="src/stylo.css" rel="stylesheet" />
+  <title>Pesquisa - Segurança ao Estacionar</title>
+ 
+</head>
+<body>
+
+
+<div class="container">
+  <div class="header" ><h2>Pesquisa de Opinião</h2>
+  <p>Tema: Segurança ao estacionar veículos leves</p></div>
+  <div class="menu">
+    
+
+  <form id="formPesquisa">
+
+    <label>Você possui CNH válida?</label>
+    <select id="cnh" required>
+      <option value="">Selecione</option>
+      <option>Sim</option>
+      <option>Não</option>
+    </select>
+
+    <label>Há quanto tempo dirige?</label>
+    <select id="tempo">
+      <option value="">Selecione</option>
+      <option>Menos de 1 ano</option>
+      <option>1 a 3 anos</option>
+      <option>3 a 10 anos</option>
+      <option>Mais de 10 anos</option>
+    </select>
+
+    <label>Você sente insegurança ao estacionar, mesmo sendo habilitado?</label>
+    <select id="inseguranca" required>
+      <option value="">Selecione</option>
+      <option>Sim, frequentemente</option>
+      <option>Às vezes</option>
+      <option>Raramente</option>
+      <option>Nunca</option>
+    </select>
+
+    <label>Qual situação causa mais dificuldade?</label>
+    <select id="situacao">
+      <option value="">Selecione</option>
+      <option>Baliza (vaga paralela)</option>
+      <option>Shopping/estacionamento fechado</option>
+      <option>Rua movimentada</option>
+      <option>Vagas apertadas</option>
+      <option>Não tenho dificuldade</option>
+    </select>
+
+    <label>Principal motivo da insegurança:</label>
+    <textarea id="motivo" rows="3"></textarea>
+
+    <fieldset>
+  <legend>Informações de Contato</legend>
+
+  <label>Telefone</label>
+  <input  id="tel" name="tel" placeholder="(00) 00000-0000" >
+
+  <label>E-mail</label>
+  <input  id="email" name="email" placeholder="seuemail@exemplo.com">
+
+</fieldset>
+
+
+    <button type="submit">Enviar Resposta</button>
+    <div class="ok" id="msg"></div>
+  </form>
+
+
+
+  </div>
+ <div class="content">
+  <img src="imagens/EstradaSol.jpg" >
+ </div>
+  <div class="footer"><h4>Footer</h4></div>
+</div>
+</body>
+</html>
