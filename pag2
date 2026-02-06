@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa sobre Trânsito</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('Estacionar.jpg'); /* SUA IMAGEM AQUI */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+           
+         
+
+            
+            flex-direction: column;
+          
+        }
+
+           .header {
+      background: lch(58.03% 4.37 19.75);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+        .form-container {
+             flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+            
+  
+        }
+
+       .msg{
+        display: block;
+        color: black;
+        font-size:1.5rem;
+        font-weight: 500;
+
+        border-right: 16px solid #f1e100;
+        white-space: nowrap;
+        overflow: hidden;
+
+
+       }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            width: 99%;
+        }
+
+
+        input#email{
+        width: 50%;
+
+        }
+
+          fieldset {
+
+        width: 96%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #101ee6;
+     }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+          .footer {
+      background: hwb(0 55% 41%);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+    </style>
+</head>
+<body>
+
+     <div class="header">
+    Sistema de Pesquisa Pública
+  </div>
+    <div class="msg">Estou realizando esse estudo..</div>
+    <div class="form-container">
+       
+        <form>
+           
+    <label>Você possui CNH válida?</label>
+    <select id="cnh" required>
+      <option value="">Selecione</option>
+      <option>Sim</option>
+      <option>Não</option>
+    </select>
+
+    <label>Há quanto tempo dirige?</label>
+    <select id="tempo">
+      <option value="">Selecione</option>
+      <option>Menos de 1 ano</option>
+      <option>1 a 3 anos</option>
+      <option>3 a 10 anos</option>
+      <option>Mais de 10 anos</option>
+    </select>
+
+    <label>Você sente insegurança ao estacionar, mesmo sendo habilitado?</label>
+    <select id="inseguranca" required>
+      <option value="">Selecione</option>
+      <option>Sim, frequentemente</option>
+      <option>Às vezes</option>
+      <option>Raramente</option>
+      <option>Nunca</option>
+    </select>
+
+    <label>Qual situação causa mais dificuldade?</label>
+    <select id="situacao">
+      <option value="">Selecione</option>
+      <option>Baliza (vaga paralela)</option>
+      <option>Shopping/estacionamento fechado</option>
+      <option>Rua movimentada</option>
+      <option>Vagas apertadas</option>
+      <option>Não tenho dificuldade</option>
+    </select>
+
+    <label>Principal motivo da insegurança:</label>
+    <textarea id="motivo" rows="3"></textarea>
+
+    <fieldset>
+  <legend>Informações de Contato</legend>
+
+  <label>Telefone</label>
+  <input  id="tel" name="tel" placeholder="(00) 00000-0000" >
+
+  <label>E-mail</label>
+  <input  id="email" name="email" placeholder="seuemail@exemplo.com">
+
+</fieldset>
+
+
+    <button type="submit">Enviar Resposta</button>
+    <div class="ok" id="msg"></div>
+        
+        </form>
+    </div>
+ <div class="footer">
+    © 2026 - Todos os direitos reservados
+  </div>
+</body>
+</html>
