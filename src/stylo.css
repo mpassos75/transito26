@@ -1,113 +1,195 @@
  
-    body {    
-      font-family: Arial, sans-serif;
-      background: #eef2f7;
-      display: flex;
-      justify-content: center;
-      padding: 25px;
-    }
-  
+ 
+ 
+ 
+body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('Estacionar.jpg'); /* SUA IMAGEM AQUI */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            
+            flex-direction: column;
+         background-attachment: fixed;
+ 
+        }
 
-    .box_II {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      max-width: 550px;
-      width: 100%;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      float:left;
-    }
-
-    .container {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "menu content"
-    "footer footer";
-  grid-template-columns: 1fr 3fr;
-  gap: 3px;
-  background-color: hwb(44 12% 0%);
-  padding: 5px;
-}
-.container div {
-  background-color: white;
-  padding: 10px;
-}
-.container div.header {
-  grid-area: header;
-  text-align: center;
- font-family: sans-serif;
-  
-}
-.container div.menu {
-  grid-area: menu;
-       background: white;
-      padding: 25px;
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
     
-      max-width: 250px;
-      width: 100%;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }       
+
+.modal-content {
+    background-color: hwb(157 20% 7%);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    word-wrap: break-word; 
+    margin-top:68px; 
+    box-shadow: 10px 10px 8px;
+        }
+
+.logo-modal {
+    width: 100px; /* Tamanho do seu logo */
+    margin-bottom: 20px;
+        }
+
+.close {
+    color: hsl(0, 87%, 49%);
+    float: right;
+    font-size: 32px;
+    font-weight:lighter;
+    cursor: pointer;
+    margin-top:1px; 
+    }
+
+
+.typewriter-text{
+    overflow: hidden; /* Esconde o texto que não foi digitado */
+   
+    text-align:left;
+    margin: 0 auto;
+    letter-spacing: .15em;
+   
+    animation: typing 5.5s steps(30, end), blink-caret .75s step-end infinite alternate;
+
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 15px;
+    white-space: pre-line;
+    
+    font-size: 0.8rem;
+    max-width: 100%; /* Respeita o container */
+    width: 100%;
+}   
+
+/* Animações */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
-    h2 {
-      text-align: center;
+@media screen and (max-width: 720px) {
+
+.modal-content {
+        width: 95%; /* Quase a tela toda */
+        margin: 5% auto; /* Ajuste de margem */
+        word-wrap: break-word; 
+        overflow-x: hidden;
+         
+       /*   font-size: 1.9rem;  Texto menor para parágrafos */
+    line-height: 1.3;  
     }
-    label {
-      display: block;
-      margin-top: 15px;
+
+ 
+  
+}
+
+
+
+      
+.header {
+      background: lch(58.03% 4.37 19.75);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 22px;
       font-weight: bold;
     }
-    select, textarea{
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+  }
+
+ 
+ 
+ 
+.form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+            
+  
     }
 
-     fieldset {
+label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
 
-        width: 100%;
+select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+textarea {
+            width: 99%;
+        }
+
+
+input#email{
+        width: 50%;
+
+        }
+
+fieldset {
+
+      width: 96%;
       padding: 8px;
       margin-top: 5px;
       border-radius: 5px;
       border: 1px solid #101ee6;
      }
+     
+button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-    input {
-        width: 90%;
+button:hover {
+            background: #0056b3;
+            }
 
-    }
-    button {
-      margin-top: 20px;
-      width: 100%;
-      padding: 10px;
-      background: #2e7d32;
+.footer {
+      background: hwb(0 55% 41%);
       color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #1b5e20;
-    }
-    .ok {
       text-align: center;
-      color: green;
-      margin-top: 10px;
+      padding: 15px;
+      font-size: 14px;
     }
 
-.container div.content {
-  grid-area: content;
-  /* width: 100%;  Ocupa 80% da largura do pai */
-  margin: 0 auto; /* Centraliza */
-}
-img {
-  width: 100%;
-}
-.container div.footer {
-  grid-area: footer;
-  text-align: center;  
-}
+
+   
+
+   
