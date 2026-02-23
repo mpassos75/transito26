@@ -96,26 +96,31 @@
         max-width: 100%;
         line-height: 1.6;
 }
-
-
      .modal-body {
         padding: 10px; /* Ajusta o corpo do modal */
-  
-    
-  }
+      }
   
 }
 
-
-
-      
 .header {
       background: lch(58.03% 4.37 19.75);
       color: white;
       padding: 20px;
       text-align: center;
-      font-size: 22px;
+      font-size: 28px;
       font-weight: bold;
+    }
+ .header-2 {
+      background: oklab(96.479% -0.07575 0.19788);
+      color: #000000;
+      padding: 20px;
+      text-align:left;
+      font-size: 15px;
+       box-shadow: 10px 10px 8px;
+      border: 2px solid black; 
+     padding: 5px;           
+     display: inline-block;   
+      
     }
 
 .container {
@@ -195,10 +200,12 @@
       text-align: center;
       padding: 15px;
       font-size: 14px;
+     font-weight: bold;
     }
 
 
    
 
    
+
 
