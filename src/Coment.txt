@@ -8,3 +8,4 @@ Pergunto:
   Assistindo toda essa repercussão e as consequências que deverão ser geradas pensei em algo prático e objeto. 
   Com a experiencia de instrutor de auto escola por 4 anos, tive a ideia de realizar uma pesquisa com objeto de quantificar a necessidade da prática de estacionamento.
   A proposta seria elaborar um disposito baseado na tacnologia (IoT) Internet das Coisas, que permitará o condutor habilitado praticar com seu próprio veículo em frente de sua residência.
+  Agrato pela atenção e colaboração!! Ps: ex-instrutor auto escola, credenciando DETRAN-RS.
